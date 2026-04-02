@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- White background -->
+  <rect width="100" height="100" fill="#faf6f7" rx="12"/>
+  <!-- Red circle (Japan flag inspired) -->
+  <circle cx="50" cy="46" r="32" fill="#bc2d45"/>
+  <!-- White heart shape -->
+  <path d="M50 66 C24 50 22 30 36 27 C43 25 49 31 50 36 C51 31 57 25 64 27 C78 30 76 50 50 66Z" fill="white"/>
+  <!-- Sakura petals (small, below) -->
+  <circle cx="20" cy="82" r="4" fill="#f9a8c0" opacity="0.8"/>
+  <circle cx="34" cy="88" r="3" fill="#f9a8c0" opacity="0.6"/>
+  <circle cx="50" cy="90" r="4" fill="#f9a8c0" opacity="0.8"/>
+  <circle cx="66" cy="88" r="3" fill="#f9a8c0" opacity="0.6"/>
+  <circle cx="80" cy="82" r="4" fill="#f9a8c0" opacity="0.8"/>
+</svg>
