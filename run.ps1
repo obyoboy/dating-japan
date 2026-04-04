@@ -1,0 +1,41 @@
+# run.ps1
+# Wrapper script for the article pipeline (Windows PowerShell)
+
+param(
+    [switch]$SkipBuildPublished,
+    [switch]$SkipImageFetch
+)
+
+$ErrorActionPreference = 'Stop'
+Set-StrictMode -Version Latest
+
+$repoRoot = $PSScriptRoot
+$pipelineScript = Join-Path $repoRoot "scripts\run-pipeline.js"
+
+if (-not (Test-Path $pipelineScript)) {
+    Write-Error "run-pipeline.js not found: $pipelineScript"
+    exit 1
+}
+
+$nodeArgs = @($pipelineScript, "--generate-with-claude")
+
+if ($SkipBuildPublished) {
+    $nodeArgs += "--skip-build-published"
+}
+
+if ($SkipImageFetch) {
+    $nodeArgs += "--skip-image-fetch"
+} else {
+    $nodeArgs += "--fetch-image-with-pexels"
+}
+
+Write-Host ""
+Write-Host "=== Dating in Japan Guide | Article Pipeline ===" -ForegroundColor Cyan
+Write-Host ""
+
+& node @nodeArgs
+
+if ($LASTEXITCODE -ne 0) {
+    Write-Error "Pipeline failed (exit code $LASTEXITCODE)"
+    exit $LASTEXITCODE
+}
