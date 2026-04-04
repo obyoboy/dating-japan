@@ -8,14 +8,17 @@ const { spawnSync } = require("node:child_process");
 const DEFAULT_TOPIC_OUTPUT = path.join("drafts", "topic.json");
 const DEFAULT_ARTICLE_INPUT = path.join("drafts", "article.json");
 const DEFAULT_ARTICLE_SKILL_PATH = ".claude/skills/generate-article/SKILL.md";
+const DEFAULT_GPT_MODEL = process.env.OPENAI_MODEL || "gpt-5";
 const ARCHIVE_ARTICLES_DIR = path.join("archive", "articles");
 const ARCHIVE_TOPICS_DIR = path.join("archive", "topics");
 const SCRIPTS = {
   buildPublishedSlugs: path.join("scripts", "build-published-slugs.js"),
   selectTopic: path.join("scripts", "select-topic.js"),
+  validateArticle: path.join("scripts", "validate-article.js"),
   publish: path.join("scripts", "publish.js"),
   markTopicUsed: path.join("scripts", "mark-topic-used.js"),
   fetchArticleImage: path.join("scripts", "fetch-article-image.js"),
+  generateWithOpenAI: path.join("scripts", "generate-with-openai.js"),
 };
 
 function parseArgs(argv) {
@@ -28,6 +31,9 @@ function parseArgs(argv) {
     waitForArticle: false,
     skillPath: DEFAULT_ARTICLE_SKILL_PATH,
     claudeTimeoutMs: 420000,
+    gptModel: DEFAULT_GPT_MODEL,
+    gptTimeoutMs: 420000,
+    gptFallback: true,
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -87,6 +93,28 @@ function parseArgs(argv) {
       continue;
     }
 
+    if (arg === "--gpt-model") {
+      options.gptModel = readOptionValue(argv, index, "--gpt-model");
+      index += 1;
+      continue;
+    }
+
+    if (arg === "--gpt-timeout-ms") {
+      const timeoutText = readOptionValue(argv, index, "--gpt-timeout-ms");
+      const parsed = Number.parseInt(timeoutText, 10);
+      if (!Number.isFinite(parsed) || parsed <= 0) {
+        throw new Error("--gpt-timeout-ms must be a positive integer.");
+      }
+      options.gptTimeoutMs = parsed;
+      index += 1;
+      continue;
+    }
+
+    if (arg === "--no-gpt-fallback") {
+      options.gptFallback = false;
+      continue;
+    }
+
     throw new Error(
       "Unknown argument: " +
         `${arg}\nUsage: node scripts/run-pipeline.js ` +
@@ -98,7 +126,10 @@ function parseArgs(argv) {
         "[--skip-image-fetch] " +
         "[--wait-for-article] " +
         "[--skill .claude/skills/generate-article/SKILL.md] " +
-        "[--claude-timeout-ms 420000]"
+        "[--claude-timeout-ms 420000] " +
+        "[--gpt-model gpt-5] " +
+        "[--gpt-timeout-ms 420000] " +
+        "[--no-gpt-fallback]"
     );
   }
 
@@ -614,18 +645,53 @@ function buildArticleJsonSchema() {
   };
 }
 
+function hasNonEmptyString(value) {
+  return typeof value === "string" && value.trim() !== "";
+}
+
+function hasRequiredLanguageFields(langBlock) {
+  if (!langBlock || typeof langBlock !== "object" || Array.isArray(langBlock)) {
+    return false;
+  }
+
+  const image = langBlock.image;
+  if (!image || typeof image !== "object" || Array.isArray(image)) {
+    return false;
+  }
+
+  return (
+    hasNonEmptyString(langBlock.title) &&
+    hasNonEmptyString(langBlock.metaDescription) &&
+    hasNonEmptyString(langBlock.badge) &&
+    hasNonEmptyString(langBlock.excerpt) &&
+    hasNonEmptyString(langBlock.bodyHtml) &&
+    hasNonEmptyString(image.url) &&
+    hasNonEmptyString(image.alt)
+  );
+}
+
 function isArticleLikeObject(value) {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
     return false;
   }
-  if (typeof value.slug !== "string" || value.slug.trim() === "") {
+  if (!hasNonEmptyString(value.slug)) {
+    return false;
+  }
+  if (!hasNonEmptyString(value.lastUpdated)) {
+    return false;
+  }
+  if (
+    typeof value.readTimeMinutes !== "number" ||
+    !Number.isFinite(value.readTimeMinutes) ||
+    value.readTimeMinutes <= 0
+  ) {
     return false;
   }
   if (!value.languages || typeof value.languages !== "object") {
     return false;
   }
   for (const lang of ["en", "tl", "vi"]) {
-    if (!value.languages[lang] || typeof value.languages[lang] !== "object") {
+    if (!hasRequiredLanguageFields(value.languages[lang])) {
       return false;
     }
   }
@@ -806,6 +872,87 @@ function runClaudeGenerate(
   console.log(`Saved article JSON: ${path.relative(repoRoot, articlePath)}`);
 }
 
+function shouldFallbackToGpt(error) {
+  if (!error || typeof error.message !== "string") {
+    return false;
+  }
+
+  const text = error.message.toLowerCase();
+  const patterns = [
+    /you(?:'|\u2019)?ve hit your limit/i,
+    /command "claude" was not found/i,
+    /claude generation timed out/i,
+    /authentication/i,
+    /unauthorized/i,
+    /forbidden/i,
+    /claude invocation failed in both compatibility modes/i,
+    /claude output was not valid article json/i,
+    /claude output was not valid json/i,
+    /did not match expected article structure/i,
+    /returned empty output/i,
+  ];
+
+  return patterns.some((pattern) => pattern.test(text));
+}
+
+function runOpenAiFallbackGenerate(
+  repoRoot,
+  options,
+  topicPath,
+  articlePath,
+  claudeError
+) {
+  const apiKey = process.env.OPENAI_API_KEY;
+  if (typeof apiKey !== "string" || apiKey.trim() === "") {
+    throw new Error(
+      "Claude generation failed and GPT fallback is enabled, but OPENAI_API_KEY is not set.\n" +
+        `Claude failure reason: ${summarizeCommandError(claudeError)}`
+    );
+  }
+
+  console.warn(
+    `Claude generation failed. Falling back to OpenAI (${options.gptModel}).`
+  );
+  console.warn(`Claude failure reason: ${summarizeCommandError(claudeError)}`);
+
+  runNodeScript(repoRoot, SCRIPTS.generateWithOpenAI, [
+    "--topic",
+    options.topicOutput,
+    "--output",
+    options.articleInput,
+    "--skill",
+    options.skillPath,
+    "--model",
+    options.gptModel,
+    "--timeout-ms",
+    String(options.gptTimeoutMs),
+  ]);
+
+  assertFileExists(articlePath, "article input");
+}
+
+function runArticleGenerateWithFallback(
+  repoRoot,
+  options,
+  topicPath,
+  articlePath
+) {
+  try {
+    runClaudeGenerate(
+      repoRoot,
+      options.skillPath,
+      topicPath,
+      articlePath,
+      options.claudeTimeoutMs
+    );
+  } catch (error) {
+    if (!options.gptFallback || !shouldFallbackToGpt(error)) {
+      throw error;
+    }
+    runOpenAiFallbackGenerate(repoRoot, options, topicPath, articlePath, error);
+  }
+}
+
 function readJsonFile(filePath, label) {
   let rawText;
   try {
@@ -918,12 +1065,12 @@ function assertPublishInputs(topicPath, articlePath) {
 }
 
 function runPublishAndPostSteps(repoRoot, options, topicOutputPath, articleInputPath, completedSteps) {
-  runStep("mark-topic-used", "Mark topic as used", completedSteps, () => {
-    runNodeScript(repoRoot, SCRIPTS.markTopicUsed, ["--topic", options.topicOutput]);
-  });
-
   runStep("publish", "Publish article", completedSteps, () => {
     runNodeScript(repoRoot, SCRIPTS.publish, ["--input", options.articleInput]);
+  });
+
+  runStep("mark-topic-used", "Mark topic as used", completedSteps, () => {
+    runNodeScript(repoRoot, SCRIPTS.markTopicUsed, ["--topic", options.topicOutput]);
   });
 }
 
@@ -941,6 +1088,12 @@ function runFetchImageStep(repoRoot, options, articleInputPath, completedSteps) 
       options.topicOutput,
     ]);
     assertFileExists(articleInputPath, "article input");
+  });
+}
+
+function runPrePublishValidationStep(repoRoot, options, completedSteps) {
+  runStep("validate-article", "Validate article JSON", completedSteps, () => {
+    runNodeScript(repoRoot, SCRIPTS.validateArticle, ["--input", options.articleInput]);
   });
 }
 
@@ -967,15 +1120,14 @@ function runPipeline() {
 
     runStep(
       "generate-with-claude",
-      "Generate article.json with Claude Code",
+      "Generate article.json (Claude with GPT fallback)",
       completedSteps,
       () => {
-        runClaudeGenerate(
+        runArticleGenerateWithFallback(
           repoRoot,
-          options.skillPath,
+          options,
           topicOutputPath,
-          articleInputPath,
-          options.claudeTimeoutMs
+          articleInputPath
         );
         assertFileExists(articleInputPath, "article input");
       }
@@ -983,6 +1135,7 @@ function runPipeline() {
 
     assertPublishInputs(topicOutputPath, articleInputPath);
     warnArticleTopicFreshness(topicOutputPath, articleInputPath);
+    runPrePublishValidationStep(repoRoot, options, completedSteps);
     runFetchImageStep(repoRoot, options, articleInputPath, completedSteps);
     runPublishAndPostSteps(repoRoot, options, topicOutputPath, articleInputPath, completedSteps);
 
@@ -1014,15 +1167,14 @@ function runPipeline() {
 
     runStep(
       "generate-with-claude",
-      "Generate article.json with Claude Code",
+      "Generate article.json (Claude with GPT fallback)",
       completedSteps,
       () => {
-        runClaudeGenerate(
+        runArticleGenerateWithFallback(
           repoRoot,
-          options.skillPath,
+          options,
           topicOutputPath,
-          articleInputPath,
-          options.claudeTimeoutMs
+          articleInputPath
         );
         assertFileExists(articleInputPath, "article input");
       }
@@ -1030,6 +1182,7 @@ function runPipeline() {
 
     assertPublishInputs(topicOutputPath, articleInputPath);
     warnArticleTopicFreshness(topicOutputPath, articleInputPath);
+    runPrePublishValidationStep(repoRoot, options, completedSteps);
     runFetchImageStep(repoRoot, options, articleInputPath, completedSteps);
     runPublishAndPostSteps(repoRoot, options, topicOutputPath, articleInputPath, completedSteps);
 
@@ -1050,6 +1203,7 @@ function runPipeline() {
 
   assertPublishInputs(topicOutputPath, articleInputPath);
   warnArticleTopicFreshness(topicOutputPath, articleInputPath);
+  runPrePublishValidationStep(repoRoot, options, completedSteps);
   runFetchImageStep(repoRoot, options, articleInputPath, completedSteps);
   runPublishAndPostSteps(repoRoot, options, topicOutputPath, articleInputPath, completedSteps);
 
