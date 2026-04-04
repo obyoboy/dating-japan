@@ -2,6 +2,20 @@
   "version": 1,
   "images": [
     {
+      "slug": "common-mistakes-foreign-men-japan-dating",
+      "provider": "pexels",
+      "photoId": 6699440,
+      "photoPageUrl": "https://www.pexels.com/photo/close-up-photo-of-romantic-couple-6699440/",
+      "photographer": "Gustavo Fring",
+      "photographerUrl": "https://www.pexels.com/@gustavo-fring",
+      "query": "Common mistakes foreign men make when dating in Japan mistakes culture gap dating respect japan dating couple",
+      "file": "images/articles/common-mistakes-foreign-men-japan-dating.jpg",
+      "sha256": "71bd7427a261cb9cd13d8ff67c3db79aaa1d0b9985f5a7274d1218849b1ae973",
+      "width": 5760,
+      "height": 3840,
+      "downloadedAt": "2026-04-04T13:40:10.062Z"
+    },
+    {
       "slug": "dating-app-profile-japan-foreign-men",
       "provider": "pexels",
       "photoId": 29763531,
