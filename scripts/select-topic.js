@@ -6,12 +6,14 @@ const path = require("node:path");
 
 const DEFAULT_TOPICS_PATH = "topics.json";
 const DEFAULT_USED_PATH = "used-topics.json";
+const DEFAULT_PUBLISHED_PATH = "published-slugs.json";
 const DEFAULT_OUTPUT_PATH = path.join("drafts", "topic.json");
 
 function parseArgs(argv) {
   const options = {
     topicsPath: DEFAULT_TOPICS_PATH,
     usedPath: DEFAULT_USED_PATH,
+    publishedPath: DEFAULT_PUBLISHED_PATH,
     outputPath: DEFAULT_OUTPUT_PATH,
   };
 
@@ -36,8 +38,14 @@ function parseArgs(argv) {
       continue;
     }
 
+    if (arg === "--published") {
+      options.publishedPath = readOptionValue(argv, index, "--published");
+      index += 1;
+      continue;
+    }
+
     throw new Error(
-      `Unknown argument: ${arg}\nUsage: node scripts/select-topic.js [--topics topics.json] [--used used-topics.json] [--output drafts/topic.json]`
+      `Unknown argument: ${arg}\nUsage: node scripts/select-topic.js [--topics topics.json] [--used used-topics.json] [--published published-slugs.json] [--output drafts/topic.json]`
     );
   }
 
@@ -132,14 +140,42 @@ function validateUsedTopicIds(usedTopicIds) {
   }
 }
 
-function filterUnusedTopics(topics, usedTopicIds) {
+function validatePublishedSlugs(publishedSlugs) {
+  if (!Array.isArray(publishedSlugs)) {
+    throw new Error("published-slugs.json must be an array of slug strings");
+  }
+
+  for (let index = 0; index < publishedSlugs.length; index += 1) {
+    if (
+      typeof publishedSlugs[index] !== "string" ||
+      publishedSlugs[index].trim() === ""
+    ) {
+      throw new Error(`published-slugs.json[${index}] must be a non-empty string`);
+    }
+  }
+}
+
+function filterUnusedTopics(topics, usedTopicIds, publishedSlugs) {
   const usedIdSet = new Set(usedTopicIds.map((id) => id.trim()));
-  return topics.filter((topicItem) => !usedIdSet.has(topicItem.id));
+  const publishedSlugSet = new Set(publishedSlugs.map((slug) => slug.trim()));
+
+  return topics.filter(
+    (topicItem) =>
+      !usedIdSet.has(topicItem.id) && !publishedSlugSet.has(topicItem.id)
+  );
+}
+
+function resetCurrentTopicUsage(topics, usedTopicIds) {
+  const topicIdSet = new Set(topics.map((topicItem) => topicItem.id));
+  const preservedUsedTopicIds = usedTopicIds.filter((id) => !topicIdSet.has(id));
+  return preservedUsedTopicIds;
 }
 
 function pickTopicByPriority(topics) {
   if (topics.length === 0) {
-    throw new Error("No unused topics available. Add new topics or review used-topics.json.");
+    throw new Error(
+      "No unused unpublished topics available. Add new topics to topics.json or remove published duplicates."
+    );
   }
 
   const highestPriority = Math.max(...topics.map((topicItem) => topicItem.priority));
@@ -159,6 +195,11 @@ function writeTopicFile(outputPath, topicItem) {
   fs.writeFileSync(outputPath, `${outputJson}\n`, "utf8");
 }
 
+function writeUsedTopicsFile(usedPath, usedTopicIds) {
+  const outputJson = JSON.stringify(usedTopicIds, null, 2);
+  fs.writeFileSync(usedPath, `${outputJson}\n`, "utf8");
+}
+
 function main() {
   try {
     const options = parseArgs(process.argv.slice(2));
@@ -166,15 +207,27 @@ function main() {
 
     const topicsPath = path.resolve(repoRoot, options.topicsPath);
     const usedPath = path.resolve(repoRoot, options.usedPath);
+    const publishedPath = path.resolve(repoRoot, options.publishedPath);
     const outputPath = path.resolve(repoRoot, options.outputPath);
 
     const topics = readJsonFile(topicsPath, "topics");
     const usedTopicIds = readJsonFile(usedPath, "used-topics");
+    const publishedSlugs = readJsonFile(publishedPath, "published-slugs");
 
     validateTopics(topics);
     validateUsedTopicIds(usedTopicIds);
+    validatePublishedSlugs(publishedSlugs);
 
-    const unusedTopics = filterUnusedTopics(topics, usedTopicIds);
+    let unusedTopics = filterUnusedTopics(topics, usedTopicIds, publishedSlugs);
+    if (unusedTopics.length === 0 && topics.length > 0) {
+      const resetUsedTopicIds = resetCurrentTopicUsage(topics, usedTopicIds);
+      writeUsedTopicsFile(usedPath, resetUsedTopicIds);
+      console.warn(
+        "Warning: All current topics were already used. Resetting cycle and rechecking against published slugs."
+      );
+      unusedTopics = filterUnusedTopics(topics, resetUsedTopicIds, publishedSlugs);
+    }
+
     const selectedTopic = pickTopicByPriority(unusedTopics);
 
     writeTopicFile(outputPath, selectedTopic);

@@ -68,5 +68,68 @@
     "topic": "How to prepare for meeting your Japanese girlfriend's parents",
     "keywords": ["family", "manners", "respect", "introduction"],
     "priority": 6
+  },
+  {
+    "id": "best-first-date-ideas-tokyo-low-pressure",
+    "category": "First Dates",
+    "topic": "Best low-pressure first date ideas in Tokyo",
+    "keywords": ["tokyo", "first date", "ideas", "low pressure"],
+    "priority": 10
+  },
+  {
+    "id": "how-to-avoid-being-seen-as-player-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "How to avoid being seen as a player in Japan dating culture",
+    "keywords": ["trust", "reputation", "intentions", "respect"],
+    "priority": 9
+  },
+  {
+    "id": "signs-she-is-politely-not-interested-japan",
+    "category": "Communication",
+    "topic": "How to tell when she is politely not interested in Japan",
+    "keywords": ["signals", "rejection", "indirect communication", "boundaries"],
+    "priority": 9
+  },
+  {
+    "id": "japanese-dating-text-frequency-what-is-normal",
+    "category": "Communication",
+    "topic": "What text frequency is normal in early Japanese dating",
+    "keywords": ["texting", "LINE", "pace", "early dating"],
+    "priority": 8
+  },
+  {
+    "id": "what-to-wear-first-date-japan-men",
+    "category": "First Dates",
+    "topic": "What men should wear on a first date in Japan",
+    "keywords": ["fashion", "first impression", "style", "etiquette"],
+    "priority": 8
+  },
+  {
+    "id": "exclusive-relationship-talk-japan-timing",
+    "category": "Relationships",
+    "topic": "When and how to talk about exclusivity in Japan dating",
+    "keywords": ["exclusivity", "commitment", "timing", "communication"],
+    "priority": 8
+  },
+  {
+    "id": "handling-age-gap-japan-dating-respectfully",
+    "category": "Tips & Warnings",
+    "topic": "How to handle age-gap dating in Japan respectfully",
+    "keywords": ["age gap", "respect", "expectations", "boundaries"],
+    "priority": 7
+  },
+  {
+    "id": "safe-public-date-spots-japan",
+    "category": "Where to Meet",
+    "topic": "Safe public places for first and second dates in Japan",
+    "keywords": ["safe date spots", "public places", "first date", "second date"],
+    "priority": 7
+  },
+  {
+    "id": "recovering-after-bad-first-date-japan",
+    "category": "First Dates",
+    "topic": "How to recover after a bad first date in Japan",
+    "keywords": ["first date", "mistakes", "recovery", "follow-up"],
+    "priority": 6
   }
 ]
