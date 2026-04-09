@@ -2,6 +2,20 @@
   "version": 1,
   "images": [
     {
+      "slug": "being-invited-home-japan-what-it-means",
+      "provider": "pexels",
+      "photoId": 10533285,
+      "photoPageUrl": "https://www.pexels.com/photo/photo-of-a-couple-in-black-leather-jackets-talking-to-each-other-10533285/",
+      "photographer": "Nguyễn Thanh Tùng",
+      "photographerUrl": "https://www.pexels.com/@nguy-n-thanh-tung-28796318",
+      "query": "japan couple date lifestyle",
+      "file": "images/articles/being-invited-home-japan-what-it-means.jpg",
+      "sha256": "8fd2d88b03a53b618e77ea3c8a61b989338530c79543f8dced095d30dd0a3eae",
+      "width": 5162,
+      "height": 3441,
+      "downloadedAt": "2026-04-09T22:01:13.738Z"
+    },
+    {
       "slug": "best-first-date-ideas-tokyo-low-pressure",
       "provider": "pexels",
       "photoId": 31258209,
