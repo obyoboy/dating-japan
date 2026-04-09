@@ -3,7 +3,10 @@
 
 param(
     [switch]$SkipBuildPublished,
-    [switch]$SkipImageFetch
+    [switch]$SkipImageFetch,
+    [ValidateSet("single", "until-claude-limit")]
+    [string]$RunMode = "single",
+    [switch]$UntilClaudeLimit
 )
 
 $ErrorActionPreference = 'Stop'
@@ -17,7 +20,11 @@ if (-not (Test-Path $pipelineScript)) {
     exit 1
 }
 
-$nodeArgs = @($pipelineScript, "--generate-with-claude")
+if ($UntilClaudeLimit) {
+    $RunMode = "until-claude-limit"
+}
+
+$nodeArgs = @($pipelineScript, "--generate-with-claude", "--run-mode", $RunMode)
 
 if ($SkipBuildPublished) {
     $nodeArgs += "--skip-build-published"
@@ -31,6 +38,7 @@ if ($SkipImageFetch) {
 
 Write-Host ""
 Write-Host "=== Dating in Japan Guide | Article Pipeline ===" -ForegroundColor Cyan
+Write-Host "Run mode: $RunMode"
 Write-Host ""
 
 & node @nodeArgs

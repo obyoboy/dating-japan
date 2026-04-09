@@ -3,133 +3,1428 @@
     "id": "how-to-ask-japanese-woman-out",
     "category": "First Dates",
     "topic": "How to ask a Japanese woman out without sounding pushy",
-    "keywords": ["first date", "invitation", "timing", "communication"],
+    "keywords": [
+      "first date",
+      "invitation",
+      "timing",
+      "communication"
+    ],
     "priority": 10
   },
   {
     "id": "line-messaging-rules-japan-dating",
     "category": "Communication",
     "topic": "LINE messaging rules that work in Japanese dating culture",
-    "keywords": ["LINE", "texting", "reply speed", "conversation"],
+    "keywords": [
+      "LINE",
+      "texting",
+      "reply speed",
+      "conversation"
+    ],
     "priority": 9
   },
   {
     "id": "who-pays-on-date-japan",
     "category": "Etiquette",
     "topic": "Who should pay on dates in Japan and how to handle the bill politely",
-    "keywords": ["date bill", "split", "etiquette", "money"],
+    "keywords": [
+      "date bill",
+      "split",
+      "etiquette",
+      "money"
+    ],
     "priority": 9
   },
   {
     "id": "red-flags-in-japan-dating",
     "category": "Tips & Warnings",
     "topic": "Red flags to watch for when dating in Japan",
-    "keywords": ["red flags", "safety", "trust", "boundaries"],
+    "keywords": [
+      "red flags",
+      "safety",
+      "trust",
+      "boundaries"
+    ],
     "priority": 8
   },
   {
     "id": "dating-app-profile-japan-foreign-men",
     "category": "Where to Meet",
     "topic": "How foreign men should build a dating app profile for Japan",
-    "keywords": ["dating app", "profile", "photos", "bio"],
+    "keywords": [
+      "dating app",
+      "profile",
+      "photos",
+      "bio"
+    ],
     "priority": 8
   },
   {
     "id": "second-date-signals-japanese-women",
     "category": "Communication",
     "topic": "How to read second-date interest signals from Japanese women",
-    "keywords": ["signals", "second date", "interest", "body language"],
+    "keywords": [
+      "signals",
+      "second date",
+      "interest",
+      "body language"
+    ],
     "priority": 8
   },
   {
     "id": "gift-giving-rules-japan-dating",
     "category": "Etiquette",
     "topic": "Gift giving rules in Japanese dating and what to avoid",
-    "keywords": ["gift", "omiyage", "valentine", "white day"],
+    "keywords": [
+      "gift",
+      "omiyage",
+      "valentine",
+      "white day"
+    ],
     "priority": 7
   },
   {
     "id": "long-term-relationship-japan-foreigners",
     "category": "Relationships",
     "topic": "Building a long-term relationship in Japan as a foreign man",
-    "keywords": ["long term", "commitment", "trust", "future plans"],
+    "keywords": [
+      "long term",
+      "commitment",
+      "trust",
+      "future plans"
+    ],
     "priority": 7
   },
   {
     "id": "common-mistakes-foreign-men-japan-dating",
     "category": "Tips & Warnings",
     "topic": "Common mistakes foreign men make when dating in Japan",
-    "keywords": ["mistakes", "culture gap", "dating", "respect"],
+    "keywords": [
+      "mistakes",
+      "culture gap",
+      "dating",
+      "respect"
+    ],
     "priority": 7
   },
   {
     "id": "meeting-parents-japanese-girlfriend",
     "category": "Relationships",
     "topic": "How to prepare for meeting your Japanese girlfriend's parents",
-    "keywords": ["family", "manners", "respect", "introduction"],
+    "keywords": [
+      "family",
+      "manners",
+      "respect",
+      "introduction"
+    ],
     "priority": 6
   },
   {
     "id": "best-first-date-ideas-tokyo-low-pressure",
     "category": "First Dates",
     "topic": "Best low-pressure first date ideas in Tokyo",
-    "keywords": ["tokyo", "first date", "ideas", "low pressure"],
+    "keywords": [
+      "tokyo",
+      "first date",
+      "ideas",
+      "low pressure"
+    ],
     "priority": 10
   },
   {
     "id": "how-to-avoid-being-seen-as-player-japan-dating",
     "category": "Tips & Warnings",
     "topic": "How to avoid being seen as a player in Japan dating culture",
-    "keywords": ["trust", "reputation", "intentions", "respect"],
+    "keywords": [
+      "trust",
+      "reputation",
+      "intentions",
+      "respect"
+    ],
     "priority": 9
   },
   {
     "id": "signs-she-is-politely-not-interested-japan",
     "category": "Communication",
     "topic": "How to tell when she is politely not interested in Japan",
-    "keywords": ["signals", "rejection", "indirect communication", "boundaries"],
+    "keywords": [
+      "signals",
+      "rejection",
+      "indirect communication",
+      "boundaries"
+    ],
     "priority": 9
   },
   {
     "id": "japanese-dating-text-frequency-what-is-normal",
     "category": "Communication",
     "topic": "What text frequency is normal in early Japanese dating",
-    "keywords": ["texting", "LINE", "pace", "early dating"],
+    "keywords": [
+      "texting",
+      "LINE",
+      "pace",
+      "early dating"
+    ],
     "priority": 8
   },
   {
     "id": "what-to-wear-first-date-japan-men",
     "category": "First Dates",
     "topic": "What men should wear on a first date in Japan",
-    "keywords": ["fashion", "first impression", "style", "etiquette"],
+    "keywords": [
+      "fashion",
+      "first impression",
+      "style",
+      "etiquette"
+    ],
     "priority": 8
   },
   {
     "id": "exclusive-relationship-talk-japan-timing",
     "category": "Relationships",
     "topic": "When and how to talk about exclusivity in Japan dating",
-    "keywords": ["exclusivity", "commitment", "timing", "communication"],
+    "keywords": [
+      "exclusivity",
+      "commitment",
+      "timing",
+      "communication"
+    ],
     "priority": 8
   },
   {
     "id": "handling-age-gap-japan-dating-respectfully",
     "category": "Tips & Warnings",
     "topic": "How to handle age-gap dating in Japan respectfully",
-    "keywords": ["age gap", "respect", "expectations", "boundaries"],
+    "keywords": [
+      "age gap",
+      "respect",
+      "expectations",
+      "boundaries"
+    ],
     "priority": 7
   },
   {
     "id": "safe-public-date-spots-japan",
     "category": "Where to Meet",
     "topic": "Safe public places for first and second dates in Japan",
-    "keywords": ["safe date spots", "public places", "first date", "second date"],
+    "keywords": [
+      "safe date spots",
+      "public places",
+      "first date",
+      "second date"
+    ],
     "priority": 7
   },
   {
     "id": "recovering-after-bad-first-date-japan",
     "category": "First Dates",
     "topic": "How to recover after a bad first date in Japan",
-    "keywords": ["first date", "mistakes", "recovery", "follow-up"],
+    "keywords": [
+      "first date",
+      "mistakes",
+      "recovery",
+      "follow-up"
+    ],
     "priority": 6
+  },
+  {
+    "id": "how-to-start-conversation-japanese-woman-online",
+    "category": "Communication",
+    "topic": "How to start a conversation with a Japanese woman online",
+    "keywords": [
+      "online dating Japan",
+      "opening message Japan",
+      "Japanese woman online",
+      "foreigner Japan chat"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "responding-to-mixed-signals-japanese-dating",
+    "category": "Communication",
+    "topic": "How to respond to mixed signals in Japanese dating",
+    "keywords": [
+      "mixed signals Japan",
+      "Japanese dating confusion",
+      "reading Japanese women",
+      "ambiguous messages Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "speaking-japanese-vs-english-dating",
+    "category": "Communication",
+    "topic": "Should you speak Japanese or English on dates in Japan",
+    "keywords": [
+      "language barrier Japan dating",
+      "Japanese or English date",
+      "speaking Japanese girlfriend",
+      "bilingual dating Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "how-to-compliment-japanese-woman-naturally",
+    "category": "Communication",
+    "topic": "How to give compliments to a Japanese woman naturally",
+    "keywords": [
+      "complimenting Japanese women",
+      "Japan dating compliments",
+      "how to praise Japanese woman",
+      "flattering Japanese date"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "phone-call-vs-text-japan-dating",
+    "category": "Communication",
+    "topic": "Phone calls vs texts in Japanese dating: what she prefers",
+    "keywords": [
+      "calling vs texting Japan",
+      "Japanese dating communication",
+      "phone call Japan girlfriend",
+      "LINE vs call Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "how-to-express-feelings-japanese-relationship",
+    "category": "Communication",
+    "topic": "How to express your feelings in a Japanese relationship",
+    "keywords": [
+      "expressing emotions Japan",
+      "confessing feelings Japan",
+      "Japanese relationship communication",
+      "emotional expression Japan"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "good-morning-good-night-messages-japan-dating",
+    "category": "Communication",
+    "topic": "Morning and night messages in Japanese dating: expectations and etiquette",
+    "keywords": [
+      "good morning message Japan",
+      "good night text Japan",
+      "daily messaging Japan dating",
+      "routine messages Japanese girlfriend"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "silence-and-pauses-japanese-conversation-dating",
+    "category": "Communication",
+    "topic": "Understanding silence and pauses in Japanese dating conversations",
+    "keywords": [
+      "silence in Japanese culture",
+      "awkward pauses Japan date",
+      "Japanese conversational silence",
+      "reading quiet Japanese woman"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "how-to-apologize-in-japanese-relationship",
+    "category": "Communication",
+    "topic": "How to apologize properly in a Japanese relationship",
+    "keywords": [
+      "apologizing Japan relationship",
+      "sorry in Japanese dating",
+      "how to make up Japan",
+      "conflict resolution Japan couple"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "planning-dates-via-line-tips",
+    "category": "Communication",
+    "topic": "How to plan dates over LINE without coming across as pushy",
+    "keywords": [
+      "planning date LINE",
+      "LINE date invitation Japan",
+      "asking out LINE Japan",
+      "scheduling date Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "table-manners-japanese-restaurant-date",
+    "category": "Etiquette",
+    "topic": "Table manners you must know for a Japanese restaurant date",
+    "keywords": [
+      "Japanese restaurant manners",
+      "eating etiquette Japan date",
+      "chopstick rules Japan",
+      "dining manners Japan"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "punctuality-importance-japan-dating",
+    "category": "Etiquette",
+    "topic": "Why punctuality matters so much in Japanese dating",
+    "keywords": [
+      "being on time Japan date",
+      "punctuality Japan culture",
+      "late for date Japan",
+      "Japanese time expectations"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "splitting-bill-etiquette-japan",
+    "category": "Etiquette",
+    "topic": "The etiquette of splitting the bill on later dates in Japan",
+    "keywords": [
+      "dutch date Japan",
+      "splitting bill Japan",
+      "paying later dates Japan",
+      "warikan Japan dating"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "holding-hands-public-affection-japan",
+    "category": "Etiquette",
+    "topic": "Public displays of affection in Japan: what is and is not acceptable",
+    "keywords": [
+      "PDA Japan dating",
+      "public affection Japan",
+      "holding hands Japan",
+      "kissing in public Japan"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "drinking-culture-japan-first-date",
+    "category": "Etiquette",
+    "topic": "Drinking culture and alcohol etiquette on dates in Japan",
+    "keywords": [
+      "drinking on date Japan",
+      "alcohol Japan dating",
+      "izakaya date etiquette",
+      "not drinking Japan date"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "gift-wrapping-presentation-japan-dating",
+    "category": "Etiquette",
+    "topic": "How to present gifts on dates in Japan: wrapping and timing",
+    "keywords": [
+      "gift presentation Japan",
+      "how to give gift Japan",
+      "wrapping gifts Japan",
+      "when to give gift Japan date"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "taking-shoes-off-japanese-home-date",
+    "category": "Etiquette",
+    "topic": "Home visit etiquette in Japan: shoes, manners, and what to bring",
+    "keywords": [
+      "shoes off Japan home",
+      "visiting Japanese home etiquette",
+      "home visit Japan girlfriend",
+      "genkan etiquette Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "smoking-etiquette-japan-dates",
+    "category": "Etiquette",
+    "topic": "Smoking etiquette when dating in Japan",
+    "keywords": [
+      "smoking Japan dating",
+      "cigarettes Japan date",
+      "smoker Japan relationship",
+      "smoking rules Japan couple"
+    ],
+    "priority": 5
+  },
+  {
+    "id": "bow-greeting-etiquette-japan-dating",
+    "category": "Etiquette",
+    "topic": "Bowing and greeting etiquette when meeting a Japanese date",
+    "keywords": [
+      "bowing Japan date",
+      "greeting Japanese woman",
+      "how to bow Japan",
+      "first meeting etiquette Japan"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "paying-for-karaoke-date-japan",
+    "category": "Etiquette",
+    "topic": "Who pays at karaoke and how to handle group date costs in Japan",
+    "keywords": [
+      "karaoke date Japan cost",
+      "paying karaoke Japan",
+      "group date payment Japan",
+      "nomikai date expenses"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "creative-first-date-ideas-osaka",
+    "category": "First Dates",
+    "topic": "Creative and fun first date ideas in Osaka for foreign men",
+    "keywords": [
+      "first date Osaka",
+      "Osaka date ideas",
+      "fun date spots Osaka",
+      "Osaka foreigner date"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "coffee-date-japan-tips",
+    "category": "First Dates",
+    "topic": "How to make a coffee date in Japan go well",
+    "keywords": [
+      "coffee date Japan",
+      "cafe date tips Japan",
+      "casual first date Japan",
+      "coffee shop date Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "museum-date-japan-ideas",
+    "category": "First Dates",
+    "topic": "Museum and art gallery dates in Japan: tips for foreign men",
+    "keywords": [
+      "museum date Japan",
+      "art gallery date Japan",
+      "cultural date Japan",
+      "indoor date ideas Japan"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "first-date-conversation-topics-japan",
+    "category": "First Dates",
+    "topic": "What to talk about on a first date with a Japanese woman",
+    "keywords": [
+      "first date conversation Japan",
+      "topics to discuss Japan date",
+      "what to talk about Japan",
+      "conversation starters Japan"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "amusement-park-date-japan",
+    "category": "First Dates",
+    "topic": "Amusement park dates in Japan: Disney, Universal, and more",
+    "keywords": [
+      "amusement park date Japan",
+      "Disney date Japan",
+      "Universal Studios Japan date",
+      "theme park Japan couple"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "daytime-vs-evening-first-date-japan",
+    "category": "First Dates",
+    "topic": "Daytime vs evening first dates in Japan: which works better",
+    "keywords": [
+      "daytime date Japan",
+      "evening first date Japan",
+      "best time first date Japan",
+      "afternoon date Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "izakaya-first-date-tips-japan",
+    "category": "First Dates",
+    "topic": "Is an izakaya a good first date spot in Japan",
+    "keywords": [
+      "izakaya first date Japan",
+      "izakaya date tips",
+      "Japanese pub date",
+      "bar date Japan foreigner"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "seasonal-date-ideas-japan-cherry-blossom",
+    "category": "First Dates",
+    "topic": "Seasonal date ideas in Japan: cherry blossoms, fireworks, and autumn leaves",
+    "keywords": [
+      "seasonal date Japan",
+      "cherry blossom date Japan",
+      "hanami date Japan",
+      "fireworks festival date Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "kyoto-date-ideas-foreign-men",
+    "category": "First Dates",
+    "topic": "Romantic date spots in Kyoto for foreign men",
+    "keywords": [
+      "Kyoto date ideas",
+      "romantic spots Kyoto",
+      "dating in Kyoto",
+      "Kyoto foreigner date"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "how-long-should-first-date-last-japan",
+    "category": "First Dates",
+    "topic": "How long should a first date last in Japan",
+    "keywords": [
+      "first date length Japan",
+      "how long date Japan",
+      "ending date Japan",
+      "first date duration Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "how-to-ask-for-second-date-japan",
+    "category": "Relationships",
+    "topic": "How and when to ask for a second date in Japan",
+    "keywords": [
+      "second date Japan",
+      "asking for second date Japan",
+      "follow up after date Japan",
+      "second meeting Japan"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "long-distance-japan-foreigner-relationship",
+    "category": "Relationships",
+    "topic": "Maintaining a long-distance relationship with a Japanese woman",
+    "keywords": [
+      "long distance Japan relationship",
+      "LDR Japan foreigner",
+      "long distance Japanese girlfriend",
+      "Japan foreigner LDR tips"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "cultural-differences-couple-conflicts-japan",
+    "category": "Relationships",
+    "topic": "How to resolve conflicts caused by cultural differences in Japan relationships",
+    "keywords": [
+      "cultural conflict Japan relationship",
+      "resolving arguments Japan",
+      "cross-cultural couple Japan",
+      "cultural misunderstanding Japan"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "japan-relationship-labels-boyfriend-girlfriend",
+    "category": "Relationships",
+    "topic": "How relationship labels like boyfriend and girlfriend work in Japan",
+    "keywords": [
+      "boyfriend Japan",
+      "girlfriend label Japan",
+      "kareshi kanojo Japan",
+      "relationship status Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "valentines-day-white-day-japan-couples",
+    "category": "Relationships",
+    "topic": "Valentine's Day and White Day in Japan: what couples do",
+    "keywords": [
+      "Valentine's Day Japan",
+      "White Day Japan",
+      "Japan chocolate tradition",
+      "couples holiday Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "anniversaries-japan-relationship-traditions",
+    "category": "Relationships",
+    "topic": "How couples celebrate anniversaries in Japan",
+    "keywords": [
+      "anniversary Japan couple",
+      "celebrating anniversary Japan",
+      "monthly anniversary Japan",
+      "Japan relationship milestone"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "meeting-friends-japanese-girlfriend",
+    "category": "Relationships",
+    "topic": "When and how to meet your Japanese girlfriend's friends",
+    "keywords": [
+      "meet friends Japan girlfriend",
+      "introduction friends Japan",
+      "Japanese girlfriend social circle",
+      "friend approval Japan dating"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "jealousy-possessiveness-japan-relationships",
+    "category": "Relationships",
+    "topic": "How to handle jealousy and possessiveness in a Japanese relationship",
+    "keywords": [
+      "jealousy Japan relationship",
+      "possessiveness Japan",
+      "yaki mochi Japan",
+      "jealous Japanese girlfriend"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "moving-in-together-japan-foreigners",
+    "category": "Relationships",
+    "topic": "Moving in together in Japan as a foreigner: what to expect",
+    "keywords": [
+      "living together Japan",
+      "cohabiting Japan foreigner",
+      "moving in Japan couple",
+      "apartment Japan couple foreigner"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "japanese-girlfriend-family-expectations",
+    "category": "Relationships",
+    "topic": "Understanding family expectations when dating a Japanese woman",
+    "keywords": [
+      "Japanese family expectations",
+      "Japanese girlfriend family",
+      "family pressure Japan dating",
+      "Japanese parent approval"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "proposing-marriage-japan-foreigner",
+    "category": "Relationships",
+    "topic": "How to propose marriage to a Japanese woman as a foreigner",
+    "keywords": [
+      "proposing Japan",
+      "marriage proposal Japan",
+      "how to propose Japanese woman",
+      "foreigner marriage Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "intercultural-marriage-japan-challenges",
+    "category": "Relationships",
+    "topic": "Challenges of intercultural marriage in Japan and how to navigate them",
+    "keywords": [
+      "intercultural marriage Japan",
+      "international marriage Japan",
+      "foreigner marriage Japan challenges",
+      "Japanese spouse foreigner"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "trust-building-japanese-relationship",
+    "category": "Relationships",
+    "topic": "How to build trust in a Japanese relationship as a foreigner",
+    "keywords": [
+      "trust Japan relationship",
+      "building trust Japan",
+      "Japanese girlfriend trust",
+      "trust issues Japan dating"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "breaking-up-in-japan-etiquette",
+    "category": "Relationships",
+    "topic": "How to break up respectfully in Japan",
+    "keywords": [
+      "breaking up Japan",
+      "how to break up Japan",
+      "ending relationship Japan",
+      "breakup etiquette Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "navigating-japanese-holidays-as-couple",
+    "category": "Relationships",
+    "topic": "How to spend Japanese holidays together as a couple",
+    "keywords": [
+      "Japan holidays couple",
+      "golden week Japan couple",
+      "obon Japan relationship",
+      "new year Japan couple"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "gaijin-fever-reality-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "Gaijin fever in Japan: what it is and how to spot it",
+    "keywords": [
+      "gaijin fever Japan",
+      "foreigner fetish Japan",
+      "yellow fever Japan",
+      "exotic foreigner Japan dating"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "scam-warnings-japan-dating-apps",
+    "category": "Tips & Warnings",
+    "topic": "Dating app scams targeting foreigners in Japan",
+    "keywords": [
+      "Japan dating scam",
+      "dating app scam Japan",
+      "fake profiles Japan",
+      "foreigner scam Japan"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "realistic-expectations-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "Setting realistic expectations when dating in Japan as a foreigner",
+    "keywords": [
+      "realistic Japan dating",
+      "expectations Japan relationship",
+      "foreigner Japan dating reality",
+      "Japan dating myths"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "stereotype-traps-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "Stereotypes about Japanese women that can ruin your dating life",
+    "keywords": [
+      "Japanese women stereotypes",
+      "dating stereotypes Japan",
+      "harmful Japan dating assumptions",
+      "avoid stereotypes Japan"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "visa-relationship-japan-foreigner-risks",
+    "category": "Tips & Warnings",
+    "topic": "Visa and relationship risks foreigners should know about in Japan",
+    "keywords": [
+      "visa Japan relationship",
+      "foreigner visa Japan partner",
+      "Japan visa marriage",
+      "overstay Japan relationship"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "moving-too-fast-japan-relationship",
+    "category": "Tips & Warnings",
+    "topic": "Signs you are moving too fast in a Japanese relationship",
+    "keywords": [
+      "moving fast Japan relationship",
+      "rushing Japan dating",
+      "pace Japan relationship",
+      "too soon Japan couple"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "ghosting-behavior-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "Understanding ghosting and sudden silence in Japanese dating",
+    "keywords": [
+      "ghosting Japan",
+      "Japan dating ghosted",
+      "sudden silence Japan",
+      "why Japanese women ghost"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "friend-zone-japan-how-to-avoid",
+    "category": "Tips & Warnings",
+    "topic": "How to avoid the friend zone in Japanese dating culture",
+    "keywords": [
+      "friend zone Japan",
+      "friendzoned Japan",
+      "Japanese woman just friends",
+      "tomodachi zone Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "fetishization-vs-genuine-interest-japan",
+    "category": "Tips & Warnings",
+    "topic": "The difference between fetishization and genuine interest when dating in Japan",
+    "keywords": [
+      "fetishization Japan dating",
+      "genuine interest Japan",
+      "respecting Japanese women",
+      "objectifying Japanese women"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "alcohol-and-bad-decisions-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "How alcohol affects dating decisions in Japan and what to watch out for",
+    "keywords": [
+      "alcohol Japan dating",
+      "drunk date Japan",
+      "nomikai mistakes Japan",
+      "drinking decisions Japan"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "social-media-boundaries-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "Social media boundaries when dating a Japanese woman",
+    "keywords": [
+      "social media Japan dating",
+      "Instagram Japan girlfriend",
+      "posting partner Japan",
+      "privacy Japan relationship"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "language-barrier-challenges-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "How the language barrier affects dating in Japan and how to overcome it",
+    "keywords": [
+      "language barrier Japan dating",
+      "communication Japan foreigner",
+      "Japanese language dating",
+      "no Japanese Japan date"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "financial-expectations-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "Financial expectations and money dynamics in Japan dating",
+    "keywords": [
+      "money Japan dating",
+      "financial expectations Japan",
+      "paying Japan relationship",
+      "expensive Japan dating"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "trust-your-gut-red-flags-japan",
+    "category": "Tips & Warnings",
+    "topic": "When to trust your instincts about red flags in Japan dating",
+    "keywords": [
+      "red flags Japan instinct",
+      "gut feeling Japan dating",
+      "warning signs Japan relationship",
+      "trust yourself Japan date"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "meeting-japanese-women-language-exchange",
+    "category": "Where to Meet",
+    "topic": "How to meet Japanese women at language exchange events",
+    "keywords": [
+      "language exchange Japan",
+      "language exchange meet women",
+      "tandem Japan dating",
+      "English conversation Japan women"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "dating-apps-japan-which-to-use",
+    "category": "Where to Meet",
+    "topic": "Best dating apps for foreigners in Japan: Pairs, Bumble, Tinder compared",
+    "keywords": [
+      "best dating apps Japan",
+      "Pairs Japan foreigner",
+      "Tinder Japan",
+      "Bumble Japan foreigner"
+    ],
+    "priority": 10
+  },
+  {
+    "id": "meeting-japanese-women-volunteering",
+    "category": "Where to Meet",
+    "topic": "How volunteering in Japan can lead to meaningful connections",
+    "keywords": [
+      "volunteering Japan meet women",
+      "volunteer events Japan",
+      "community Japan women",
+      "NGO Japan dating"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "gym-sports-club-japan-meet-women",
+    "category": "Where to Meet",
+    "topic": "Meeting Japanese women through gyms and sports clubs",
+    "keywords": [
+      "gym Japan meet women",
+      "sports club Japan",
+      "fitness Japan dating",
+      "martial arts Japan women"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "international-party-events-japan",
+    "category": "Where to Meet",
+    "topic": "International parties and mixer events in Japan for foreigners",
+    "keywords": [
+      "international party Japan",
+      "mixer event Japan",
+      "foreigner party Japan",
+      "kokusai koryu Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "meet-japanese-women-cooking-class",
+    "category": "Where to Meet",
+    "topic": "Cooking classes in Japan as a way to meet Japanese women",
+    "keywords": [
+      "cooking class Japan meet women",
+      "culinary class Japan",
+      "food class Japan dating",
+      "Japanese cooking class foreigners"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "coworker-romance-japan-workplace-dating",
+    "category": "Where to Meet",
+    "topic": "Workplace romance in Japan: rules and risks for foreign workers",
+    "keywords": [
+      "workplace dating Japan",
+      "office romance Japan",
+      "coworker Japan romance",
+      "foreigner Japan work dating"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "university-campus-meet-japanese-women",
+    "category": "Where to Meet",
+    "topic": "Meeting Japanese women on university campuses as a foreign student",
+    "keywords": [
+      "university Japan meet women",
+      "campus dating Japan",
+      "foreign student Japan romance",
+      "college Japan dating"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "bars-in-japan-meet-women-tips",
+    "category": "Where to Meet",
+    "topic": "Which types of bars in Japan are good for meeting women",
+    "keywords": [
+      "bars Japan meet women",
+      "bar Japan dating",
+      "standing bar Japan",
+      "hub bar Japan foreigner"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "bookstore-cafe-meet-japanese-women",
+    "category": "Where to Meet",
+    "topic": "Low-key spots like bookstores and cafes for meeting Japanese women",
+    "keywords": [
+      "cafe meet women Japan",
+      "bookstore Japan meet women",
+      "quiet meet Japan",
+      "everyday spots Japan dating"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "hobby-clubs-japan-foreigner-dating",
+    "category": "Where to Meet",
+    "topic": "Finding Japanese women through hobby and interest clubs",
+    "keywords": [
+      "hobby club Japan",
+      "interest group Japan women",
+      "club activity Japan",
+      "circle Japan meet women"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "shrine-festival-meet-japanese-women",
+    "category": "Where to Meet",
+    "topic": "Meeting Japanese women at shrines, festivals, and cultural events",
+    "keywords": [
+      "matsuri Japan meet women",
+      "shrine festival Japan",
+      "cultural event Japan women",
+      "summer festival Japan dating"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "rural-japan-dating-foreigner",
+    "category": "Where to Meet",
+    "topic": "Dating as a foreigner in rural Japan: challenges and opportunities",
+    "keywords": [
+      "rural Japan dating",
+      "countryside Japan foreigner",
+      "inaka Japan dating",
+      "small town Japan romance"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "social-circles-japan-how-to-expand",
+    "category": "Where to Meet",
+    "topic": "How to expand your social circle to meet more Japanese women",
+    "keywords": [
+      "social circle Japan",
+      "expand network Japan",
+      "meet people Japan foreigner",
+      "social life Japan foreigner"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "meet-women-japan-through-friends",
+    "category": "Where to Meet",
+    "topic": "Using your existing friends and contacts to meet Japanese women",
+    "keywords": [
+      "friend introduction Japan",
+      "meet women Japan friends",
+      "setsudan Japan",
+      "word of mouth Japan dating"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "omiai-vs-modern-dating-japan",
+    "category": "Etiquette",
+    "topic": "Omiai vs modern dating in Japan: what foreigners need to know",
+    "keywords": [
+      "omiai Japan",
+      "arranged meeting Japan",
+      "traditional dating Japan",
+      "omiai foreigner"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "how-japanese-women-date-differently",
+    "category": "Communication",
+    "topic": "Key ways Japanese women approach dating differently from Western women",
+    "keywords": [
+      "Japanese women dating style",
+      "Japan vs Western dating",
+      "dating differences Japan",
+      "Japanese dating culture women"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "texting-etiquette-early-dating-japan",
+    "category": "Communication",
+    "topic": "Texting etiquette during the early stages of dating in Japan",
+    "keywords": [
+      "texting early Japan dating",
+      "early message Japan",
+      "how to text Japan",
+      "LINE early relationship Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "how-to-show-interest-without-pressure-japan",
+    "category": "Communication",
+    "topic": "How to show romantic interest without putting pressure on a Japanese woman",
+    "keywords": [
+      "showing interest Japan",
+      "subtle flirting Japan",
+      "no pressure Japan dating",
+      "indirect interest Japan"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "video-call-dating-japan-tips",
+    "category": "Communication",
+    "topic": "How to make video calls work in Japanese dating",
+    "keywords": [
+      "video call Japan dating",
+      "zoom date Japan",
+      "FaceTime Japan girlfriend",
+      "online relationship Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "emoji-sticker-usage-japan-dating",
+    "category": "Communication",
+    "topic": "How to use emoji and LINE stickers in Japanese dating conversations",
+    "keywords": [
+      "emoji Japan dating",
+      "LINE sticker Japan",
+      "stickers Japan relationship",
+      "emoji meaning Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "confessing-feelings-kokuhaku-japan",
+    "category": "Communication",
+    "topic": "The art of kokuhaku: confessing your feelings in Japan",
+    "keywords": [
+      "kokuhaku Japan",
+      "confessing love Japan",
+      "love confession Japan",
+      "telling feelings Japan"
+    ],
+    "priority": 10
+  },
+  {
+    "id": "how-to-disagree-respectfully-japan-dating",
+    "category": "Communication",
+    "topic": "How to disagree or say no respectfully in a Japanese relationship",
+    "keywords": [
+      "saying no Japan relationship",
+      "disagreement Japan couple",
+      "confrontation Japan dating",
+      "assertive Japan relationship"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "double-date-japan-tips",
+    "category": "First Dates",
+    "topic": "Double dates in Japan: what to expect and how to arrange them",
+    "keywords": [
+      "double date Japan",
+      "group date Japan",
+      "gokon Japan foreigner",
+      "double date tips Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "gokon-group-blind-date-japan",
+    "category": "Where to Meet",
+    "topic": "What is a gokon and how foreigners can join one in Japan",
+    "keywords": [
+      "gokon Japan",
+      "group blind date Japan",
+      "gokon foreigner",
+      "join gokon Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "aquarium-zoo-date-ideas-japan",
+    "category": "First Dates",
+    "topic": "Aquarium and zoo dates in Japan: why they are so popular",
+    "keywords": [
+      "aquarium date Japan",
+      "zoo date Japan",
+      "animal cafe Japan date",
+      "aquarium couples Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "onsen-hot-spring-date-japan",
+    "category": "First Dates",
+    "topic": "Can you go to an onsen together as a couple in Japan",
+    "keywords": [
+      "onsen date Japan",
+      "hot spring date Japan",
+      "mixed bath Japan couple",
+      "onsen couple etiquette"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "hiking-nature-date-japan",
+    "category": "First Dates",
+    "topic": "Hiking and nature dates in Japan for active couples",
+    "keywords": [
+      "hiking date Japan",
+      "nature date Japan",
+      "outdoor date Japan",
+      "mountain date Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "shopping-as-date-japan-tips",
+    "category": "First Dates",
+    "topic": "Shopping dates in Japan: how to make them romantic and fun",
+    "keywords": [
+      "shopping date Japan",
+      "mall date Japan",
+      "Harajuku date",
+      "Shibuya shopping date Japan"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "japanese-woman-pays-date-what-it-means",
+    "category": "Etiquette",
+    "topic": "What it means when a Japanese woman insists on paying on a date",
+    "keywords": [
+      "Japanese woman pays date",
+      "she pays Japan",
+      "woman paying Japan",
+      "dutch Japan woman"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "being-invited-home-japan-what-it-means",
+    "category": "Etiquette",
+    "topic": "What it means when a Japanese woman invites you to her home",
+    "keywords": [
+      "invited home Japan",
+      "Japanese woman home invite",
+      "home visit meaning Japan",
+      "her apartment Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "meeting-japanese-woman-at-work-event",
+    "category": "Where to Meet",
+    "topic": "Meeting Japanese women at professional networking events",
+    "keywords": [
+      "networking event Japan",
+      "business event Japan women",
+      "professional meet Japan",
+      "work event Japan dating"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "speed-dating-events-japan-foreigners",
+    "category": "Where to Meet",
+    "topic": "Speed dating events in Japan open to foreigners",
+    "keywords": [
+      "speed dating Japan",
+      "speed date Japan foreigner",
+      "quick meet Japan",
+      "speed dating Tokyo"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "instagram-meet-japanese-women-tips",
+    "category": "Where to Meet",
+    "topic": "Using Instagram to connect with Japanese women: tips and boundaries",
+    "keywords": [
+      "Instagram Japan meet women",
+      "social media Japan dating",
+      "DM Japanese woman",
+      "Instagram Japan foreigner"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "making-japanese-woman-laugh-humor",
+    "category": "Communication",
+    "topic": "How to use humor with a Japanese woman without getting lost in translation",
+    "keywords": [
+      "humor Japan dating",
+      "making Japanese woman laugh",
+      "jokes Japan date",
+      "comedy cross-culture Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "avoiding-oversharing-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "Why oversharing personal information early is a turn-off in Japan",
+    "keywords": [
+      "oversharing Japan dating",
+      "too much info Japan",
+      "personal info Japan relationship",
+      "privacy Japan dating"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "how-to-plan-romantic-trip-with-japanese-girlfriend",
+    "category": "Relationships",
+    "topic": "How to plan a romantic trip inside Japan with your Japanese girlfriend",
+    "keywords": [
+      "romantic trip Japan girlfriend",
+      "travel Japan couple",
+      "couple trip Japan",
+      "Japan vacation girlfriend"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "travel-abroad-japanese-girlfriend-tips",
+    "category": "Relationships",
+    "topic": "Tips for traveling abroad with your Japanese girlfriend",
+    "keywords": [
+      "travel abroad Japan girlfriend",
+      "overseas trip Japan partner",
+      "Japanese girlfriend travel abroad",
+      "passport trip Japan couple"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "christmas-date-ideas-japan",
+    "category": "First Dates",
+    "topic": "Christmas date ideas in Japan: why it is the most romantic night of the year",
+    "keywords": [
+      "Christmas date Japan",
+      "Christmas Japan couple",
+      "December 24 Japan romance",
+      "kurisumasu date Japan"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "new-year-date-japan-couple",
+    "category": "First Dates",
+    "topic": "How to spend New Year's Eve and New Year's Day with a Japanese partner",
+    "keywords": [
+      "New Year Japan couple",
+      "oshogatsu Japan partner",
+      "January 1 Japan date",
+      "countdown date Japan"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "how-to-handle-rejection-japan-dating",
+    "category": "Tips & Warnings",
+    "topic": "How to handle rejection gracefully in Japan dating culture",
+    "keywords": [
+      "rejection Japan dating",
+      "rejected Japan woman",
+      "graceful rejection Japan",
+      "dealing with no Japan"
+    ],
+    "priority": 8
   }
 ]
