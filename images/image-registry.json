@@ -2,6 +2,20 @@
   "version": 1,
   "images": [
     {
+      "slug": "amusement-park-date-japan",
+      "provider": "pexels",
+      "photoId": 9653765,
+      "photoPageUrl": "https://www.pexels.com/photo/a-woman-and-man-drinking-together-9653765/",
+      "photographer": "Ron Lach",
+      "photographerUrl": "https://www.pexels.com/@ron-lach",
+      "query": "amusement park date japan japan dating culture",
+      "file": "images/articles/amusement-park-date-japan.jpg",
+      "sha256": "6a56cf45442d4921eb1e2df54784e2d9333c052e5fb320a00250fbb593b847e1",
+      "width": 6042,
+      "height": 4028,
+      "downloadedAt": "2026-04-10T06:56:28.160Z"
+    },
+    {
       "slug": "bars-in-japan-meet-women-tips",
       "provider": "pexels",
       "photoId": 31368485,
