@@ -2,6 +2,20 @@
   "version": 1,
   "images": [
     {
+      "slug": "alcohol-and-bad-decisions-japan-dating",
+      "provider": "pexels",
+      "photoId": 2187426,
+      "photoPageUrl": "https://www.pexels.com/photo/selective-focus-photography-of-liquor-glass-on-stone-surface-2187426/",
+      "photographer": "Evgeny Tchebotarev",
+      "photographerUrl": "https://www.pexels.com/@evgeny-tchebotarev-1058775",
+      "query": "How alcohol affects dating decisions in Japan and what to watch out for alcohol Japan dating drunk date Japan nomikai mistakes Japan drinking decisions Japan japan dating couple",
+      "file": "images/articles/alcohol-and-bad-decisions-japan-dating.jpg",
+      "sha256": "a20402f0210474104fc766bd89bac599b7cbe750e7c7f33c58def17b4751c4f9",
+      "width": 6000,
+      "height": 4000,
+      "downloadedAt": "2026-04-17T20:59:52.256Z"
+    },
+    {
       "slug": "amusement-park-date-japan",
       "provider": "pexels",
       "photoId": 9653765,
